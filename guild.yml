@@ -1,7 +1,7 @@
 op_optimize:
   main: guild_examples.to_optimize
   sourcecode: no
-  maximize: loss
+  minimize: loss
   optimizer:
     algorithm: gp
     prev-trials: operation
