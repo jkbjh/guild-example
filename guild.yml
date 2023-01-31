@@ -1,0 +1,23 @@
+op_optimize:
+  main: guild_examples.to_optimize
+  sourcecode: no
+  maximize: loss
+  optimizer:
+    algorithm: gp
+    prev-trials: operation
+  flags-dest: args
+  flags-import: all
+  flags:
+    method:
+      default: EASOM
+      type: string
+      required: True
+    x:
+      type: float
+    y:
+      type: float
+    a:
+      type: float
+    b:
+      type: float
+
